@@ -54,7 +54,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
             </div>
           </>
         ) : (
-          <div className="flex flex-col sm:flex-col justify-start items-center h-96 gap-4">
+          <div className="flex flex-col sm:flex-col justify-center items-center gap-4 w-60 h-60">
             <div className="flex justify-center ">
               <IconComponent size={iconSize} />
             </div>
