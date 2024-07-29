@@ -14,14 +14,11 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
         id="header-section"
         style={{ backgroundImage: "url('./assets/headerImg9.png')" }}
       ></div>
-      <div
-        className="flex flex-col justify-center items-center h-full  gap-4 px-2 bg-cover"
-        style={{ backgroundImage: "url('./assets/logo.png')" }}
-      >
+      <div className="flex flex-col justify-center items-center h-full  gap-4 px-2 bg-cover">
         <Image
           className="w-64 -translate-x-4"
-          src="/assets/logo8.png"
-          alt="Picture of brain"
+          src="/assets/logo.png"
+          alt="Logo"
           width={500}
           height={500}
         />
