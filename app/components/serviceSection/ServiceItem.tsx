@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react";
 import { IconType } from "react-icons";
-import { AiOutlineCaretRight } from "react-icons/ai";
 
 interface ServiceItemProps {
   title: string;

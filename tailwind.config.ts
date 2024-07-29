@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         primary: "var(--custom-blue-soft)",
         secondary: "var(--custom-blue-dark)",
+        tertiary: "var(--custom-blue-light)",
       },
     },
   },

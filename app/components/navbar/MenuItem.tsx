@@ -20,13 +20,13 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, onClick }) => {
                 transition
                 font-semibold
                 cursor-pointer
-                border-b-[0.5px]
+                border-t-[0.5px]
                 w-[120vw]
                 h-20
                 lg:w-auto
                 lg:border-none
                 hover:bg-secondary
-                lg:hover:bg-primary
+                lg:hover:bg-secondary
                 px-2
                 lg:px-0
             "

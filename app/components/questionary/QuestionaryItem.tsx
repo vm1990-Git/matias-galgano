@@ -30,7 +30,7 @@ const QuestionaryItem: React.FC<QuestionaryItemProps> = ({
         onClick={toggleOpen}
       >
         <span className="font-semibold">{question}</span>
-        <div className="text-gray-700">
+        <div className="text-tertiary">
           {open ? (
             <IoIosArrowDropupCircle size={22} />
           ) : (

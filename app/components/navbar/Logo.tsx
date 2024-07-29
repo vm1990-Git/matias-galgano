@@ -9,7 +9,7 @@ const Logo = () => {
     >
       <Image
         className="w-12"
-        src={"/assets/logo.png"}
+        src={"/assets/logo2.png"}
         alt="Logo image"
         width={500}
         height={500}

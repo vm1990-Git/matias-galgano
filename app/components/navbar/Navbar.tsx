@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [isOpen, closeMenu]);
 
   return (
-    <div className="fixed w-full bg-white shadow-sm z-50 text-secondary xl:px-20 top-0">
+    <div className="fixed w-full bg-primary shadow-sm z-50 text-white xl:px-20 top-0">
       <div className="flex justify-between items-center">
         <Logo />
         <div>
