@@ -5,7 +5,7 @@ const useScrollTo = (): ((targetId: string) => void) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const navbarHeight = 60;
+      const navbarHeight = 50;
       const additionalOffset = 10;
       const targetOffsetTop =
         targetElement.offsetTop - navbarHeight - additionalOffset;
