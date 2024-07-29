@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ description }) => {
         id="header-section"
         style={{ backgroundImage: "url('./assets/headerImg9.png')" }}
       ></div>
-      <div className="flex flex-col justify-center items-center h-full w-96 gap-10 -translate-y-20">
+      <div className="flex flex-col justify-center items-center h-full w-96 gap-4">
         <Image
           className="w-80 mx-6"
           src="/assets/logo2.png"
