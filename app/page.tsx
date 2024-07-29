@@ -29,6 +29,7 @@ export default function Home() {
     <div className="flex flex-col justify-center">
       <Navbar />
       <Header
+        title="Dr. Matias Galgano"
         description="¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco.
           Mi nombre es Matías Galgano, oftalmólogo formado en la Universidad de Buenos Aires y en el Hospital Santa Lucía de Buenos Aires.
           "

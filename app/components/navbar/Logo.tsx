@@ -14,8 +14,10 @@ const Logo = () => {
         width={500}
         height={500}
       />
-      <div className="flex flex-col w-60 text-lg translate-y-0.5">
-        <span className="font-semibold leading-tight">Dr. Matias Galgano </span>
+      <div className="flex flex-col w-60 text-base translate-y-0.5">
+        <span className="font-semibold leading-tight">
+          Centro de ORL y Oftalmología Dr. Galgano{" "}
+        </span>
         <div className="flex flex-col sm:flex-row">
           <span className="text-sm font-semibold">
             M.N. 161969 - M.P. 338690
