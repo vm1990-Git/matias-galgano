@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
         id="header-section"
         style={{ backgroundImage: "url('./assets/headerImg9.png')" }}
       ></div>
-      <div className="flex flex-col justify-center items-center h-full  gap-4 px-2 bg-cover">
+      <div className="flex flex-col justify-center items-center h-full px-2 bg-cover">
         <Image
           className="w-64 -translate-x-4"
           src="/assets/logo.png"
@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
           width={500}
           height={500}
         />
-        <div className="flex flex-col md:max-w-sm p-4 sm:p-12">
+        <div className="flex flex-col md:max-w-sm p-4">
           <span className="font-bold text-xl">{title}</span>
           <span className="font-semi text-lg semi">{description}</span>
         </div>
