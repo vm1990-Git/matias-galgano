@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full bg-primary shadow-sm z-50 text-white xl:px-20 top-0">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center h-20">
         <Logo />
         <div>
           <div>
