@@ -18,7 +18,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
           title="Consultorio general de Oftalmología"
           icon={BsJournalMedical}
           iconSize={120}
-          description="Atención integral para la salud ocular, realizando exámenes, diagnósticos y tratamientos personalizados para cada paciente."
+          description={[
+            "Atención integral para la salud ocular, realizando exámenes, diagnósticos y tratamientos personalizados para cada paciente.",
+          ]}
         />
         <ServiceItem
           title="Estudios"
