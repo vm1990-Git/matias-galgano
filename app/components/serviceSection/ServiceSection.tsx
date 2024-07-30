@@ -12,7 +12,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
       className="flex flex-col w-full justify-center items-center text-white py-8 bg-primary"
       id="service-section"
     >
-      <h2 className="font-bold text-4xl">Nuestros Servicios</h2>
+      <h2 className="font-bold text-4xl text-center">Nuestros Servicios</h2>
       <div className="flex flex-wrap justify-center items-center gap-0 md:gap-20 pt-10">
         <ServiceItem
           title="Consultorio general de Oftalmología"
