@@ -8,19 +8,18 @@ const Logo = () => {
       onClick={() => window.location.reload()}
     >
       <Image
-        className="w-12"
-        src={"/assets/logo2.png"}
+        className="w-14"
+        src={"/assets/logoWhite.png"}
         alt="Logo image"
         width={500}
         height={500}
       />
-      <div className="flex flex-col w-60 text-lg translate-y-0.5">
-        <span className="font-semibold leading-tight">Dr. Matias Galgano </span>
-        <div className="flex flex-col sm:flex-row">
-          <span className="text-xs font-semibold">
-            M.N. 161969 - M.P. 338690
-          </span>
-        </div>
+      <div className="flex flex-col w-60 text-lg translate-y-0.5 ">
+        <span className="font-semibold leading-tight">Dr. Matías Galgano </span>
+        <span className="text-lg font-semibold leading-tight">Oftalmólogo</span>
+        <span className="text-xs font-semibold leading-tight">
+          M.N. 161969 - M.P. 338690
+        </span>
       </div>
     </div>
   );

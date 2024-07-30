@@ -22,7 +22,7 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
         />
         <QuestionaryItem
           question="¿Atendés por Obra Social?"
-          answer="Por el momento, solo OSDE."
+          answer="Solo OSDE."
         />
         <QuestionaryItem
           question="¿Ofrecen consultas en línea?"

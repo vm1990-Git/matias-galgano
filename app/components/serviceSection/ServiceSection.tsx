@@ -17,7 +17,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
         <ServiceItem
           title="Consultorio general de Oftalmología"
           icon={BsJournalMedical}
-          iconSize={120}
+          iconSize={100}
           description={[
             "Atención integral para la salud ocular, realizando exámenes, diagnósticos y tratamientos personalizados para cada paciente.",
           ]}
@@ -25,7 +25,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
         <ServiceItem
           title="Estudios"
           icon={FaUserDoctor}
-          iconSize={120}
+          iconSize={100}
           description={[
             "Fondo de ojos",
             "Test de ojo seco",
@@ -37,16 +37,16 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({}) => {
         <ServiceItem
           title="Cirugías"
           icon={FaEye}
-          iconSize={120}
+          iconSize={100}
           description={[
+            "Cataratas",
+            "Refractiva con Excimer Laser",
+            "Refractiva con lentes fáquicas",
             "Tapones lagrimales",
             "Glaucoma",
             "Anillos intraestromales",
             "Retina",
             "Iridotomía con Yag Láser",
-            "Refractiva con Excimer Laser",
-            "Cataratas",
-            "Refractiva con lentes fáquicas",
             "Fotocoagulación con láser argón",
             "Pterigion autoinjerto conjuntival",
             "Capsulotomía posterior con Yag Láser",

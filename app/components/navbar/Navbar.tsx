@@ -86,7 +86,15 @@ const Navbar = () => {
         </div>
         <div className="flex lg:hidden">
           <div className="flex relative px-4">
-            <div onClick={toggleOpen} className="rounded-full p-1.5 transition">
+            <div
+              onClick={toggleOpen}
+              className="rounded-full p-1.5 transition"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              tabIndex={0}
+              role="button"
+              aria-label="Toggle Menu"
+            >
               <HiMenu size={30} />
             </div>
           </div>

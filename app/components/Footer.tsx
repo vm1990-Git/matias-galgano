@@ -1,6 +1,5 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -8,17 +7,10 @@ const Footer = () => {
       <div className="flex items-center gap-2 rounded-full">
         <a
           className="flex justify-center items-center"
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/matias-galgano-667a28134/"
           target="_blank"
         >
           <FaLinkedin size={27} />
-        </a>
-        <a
-          className="flex justify-center items-center"
-          href="https://www.instagram.com/"
-          target="_blank"
-        >
-          <GrInstagram size={25} />
         </a>
       </div>
     </div>

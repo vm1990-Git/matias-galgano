@@ -29,14 +29,14 @@ export default function Home() {
     <div className="flex flex-col justify-center">
       <Navbar />
       <Header
-        title="Dr. Matias Galgano"
+        title="Dr. Matías Galgano"
         description="¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco.
           Mi nombre es Matías Galgano, oftalmólogo formado en la Universidad de Buenos Aires y en el Hospital Santa Lucía de Buenos Aires.
           "
       />
       <TwoIconSection
         iconA={FaHospital}
-        iconsSize={100}
+        iconsSize={90}
         titleA="Atención Presencial"
         descriptionA='Pres. José E. Uriburu 1170 PB "A", CABA'
         actionA={() => {
@@ -53,13 +53,13 @@ export default function Home() {
       <div className="bg-primary">
         <TwoIconSection
           iconA={FaSquarePhone}
-          iconsSize={100}
+          iconsSize={90}
           titleA="Llamanos"
-          descriptionA="6379-4344"
+          descriptionA="11-4823-0403"
           actionA={openWhatsapp}
-          iconB={IoMdMailOpen}
-          titleB="Envíanos un Mail"
-          descriptionB="drgalganomatias@gmail.com"
+          iconB={IoLogoWhatsapp}
+          titleB="Escribinos a Whatsapp"
+          descriptionB="11-6542-5471"
           actionB={() => {
             scrollTo("contact-section");
           }}
