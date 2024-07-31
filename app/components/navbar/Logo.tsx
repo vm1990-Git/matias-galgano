@@ -4,7 +4,7 @@ import React from "react";
 const Logo = () => {
   return (
     <div
-      className="flex justify-center items-center p-2 cursor-pointer gap-1"
+      className="flex justify-center items-center p-2 cursor-pointer gap-1 h-20 min-w-60"
       onClick={() => window.location.reload()}
     >
       <Image
@@ -14,7 +14,7 @@ const Logo = () => {
         width={500}
         height={500}
       />
-      <div className="flex flex-col w-60 text-lg translate-y-0.5 ">
+      <div className="flex justify-center flex-col text-lg translate-y-0.5">
         <span className="font-semibold leading-tight">Dr. Matías Galgano </span>
         <span className="text-lg font-semibold leading-tight">Oftalmólogo</span>
         <span className="text-xs font-semibold leading-tight">

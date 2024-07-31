@@ -1,29 +1,26 @@
 "use client";
 
+import React from "react";
 import Header from "./components/Header";
 import Navbar from "./components/navbar/Navbar";
 import TwoIconSection from "./components/twoIconSection/TwoIconSection";
-
-import { IoLogoWhatsapp, IoMdMailOpen } from "react-icons/io";
-import { RiComputerLine } from "react-icons/ri";
-import useScrollTo from "./hooks/useScrollTo";
 import Profile from "./components/profile/Profile";
 import Questionary from "./components/questionary/Questionary";
 import Location from "./components/Location";
 import ServiceSection from "./components/serviceSection/ServiceSection";
-import { FaHospital } from "react-icons/fa";
-import { FaSquarePhone } from "react-icons/fa6";
 import Footer from "./components/Footer";
 import ContactUs from "./components/contactUs/ContactUs";
 
-// import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { makePhoneCall, openWhatsapp } from "./utils/utils";
+import { FaHospital, FaSquarePhone } from "react-icons/fa6";
+import { RiComputerLine } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
+import useScrollTo from "./hooks/useScrollTo";
 
 export default function Home() {
   const scrollTo = useScrollTo();
-
-  const openWhatsapp = () => {
-    window.open("https://api.whatsapp.com/send/?phone=");
-  };
 
   return (
     <div className="flex flex-col justify-center">
@@ -31,17 +28,14 @@ export default function Home() {
       <Header
         title="Dr. Matías Galgano"
         description="¡Hola! Te doy la bienvenida a mi sitio web para conocernos un poco.
-          Mi nombre es Matías Galgano, oftalmólogo formado en la Universidad de Buenos Aires y en el Hospital Santa Lucía de Buenos Aires.
-          "
+          Mi nombre es Matías Galgano, oftalmólogo formado en la Universidad de Buenos Aires y en el Hospital Santa Lucía de Buenos Aires."
       />
       <TwoIconSection
         iconA={FaHospital}
         iconsSize={90}
         titleA="Atención Presencial"
         descriptionA='Pres. José E. Uriburu 1170 PB "A", CABA'
-        actionA={() => {
-          scrollTo("location-section");
-        }}
+        actionA={() => scrollTo("location-section")}
         iconB={RiComputerLine}
         titleB="Atención Virtual"
         descriptionB="Videollamadas, Zoom & Meet"
@@ -56,16 +50,22 @@ export default function Home() {
           iconsSize={90}
           titleA="Llamanos"
           descriptionA="11-4823-0403"
-          actionA={openWhatsapp}
+          actionA={() => makePhoneCall("1148230403")}
           iconB={IoLogoWhatsapp}
-          titleB="Escribinos a Whatsapp"
+          titleB="Turnos por WhatsApp"
           descriptionB="11-6542-5471"
-          actionB={() => {
-            scrollTo("contact-section");
-          }}
+          actionB={() => openWhatsapp("5491165425471")}
         />
         <ContactUs />
       </div>
+      <FloatingWhatsApp
+        phoneNumber="+54 9 11 6681-4597"
+        accountName="Dr. Matías Galgano"
+        avatar="https://pps.whatsapp.net/v/t61.24694-24/422514459_1124507558543634_7227616524024034180_n.jpg?ccb=11-4&oh=01_Q5AaIHWI5Xgefy86Daf1-tOkzTQpb567nU68FOxi0HGC5rR5&oe=66AE0BAD&_nc_sid=e6ed6c&_nc_cat=109"
+        chatMessage="Hola, dejame tu consulta y en breve me contactaré."
+        buttonStyle={{ bottom: 15, right: 15 }}
+        chatboxStyle={{ bottom: 80, right: 5 }}
+      />
       <Location />
       <Footer />
     </div>
