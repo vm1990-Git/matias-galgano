@@ -61,7 +61,7 @@ export default function Home() {
       <FloatingWhatsApp
         phoneNumber="+54 9 11 6542-5471"
         accountName="Dr. Matías Galgano"
-        avatar="https://pps.whatsapp.net/v/t61.24694-24/422514459_1124507558543634_7227616524024034180_n.jpg?ccb=11-4&oh=01_Q5AaIHWI5Xgefy86Daf1-tOkzTQpb567nU68FOxi0HGC5rR5&oe=66AE0BAD&_nc_sid=e6ed6c&_nc_cat=109"
+        avatar="/assets/logoWhatsApp.png"
         chatMessage="Hola, dejame tu consulta y en breve me contactaré."
         buttonStyle={{ bottom: 15, right: 15 }}
         chatboxStyle={{ bottom: 80, right: 5 }}
