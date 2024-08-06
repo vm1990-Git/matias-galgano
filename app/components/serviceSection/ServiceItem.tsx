@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { IconType } from "react-icons";
+import { isMobileDevice } from "../../utils/utils"; // Ajusta la ruta según tu estructura de archivos
 
 interface ServiceItemProps {
   title: string;
@@ -16,16 +17,18 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
 }) => {
   const [selected, setSelected] = useState(false);
 
+  const isMobile = isMobileDevice();
+
   const handleMouseEnter = useCallback(() => setSelected(true), []);
   const handleMouseLeave = useCallback(() => setSelected(false), []);
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center text-wrap rounded-2xl h-60 w-60 font-semibold text-sm select-none"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleMouseEnter}
-      onTouchEnd={handleMouseLeave}
+      className="flex flex-col items-center justify-center text-center text-wrap rounded-2xl h-60 w-60 font-semibold text-sm"
+      onMouseEnter={!isMobile ? handleMouseEnter : undefined}
+      onMouseLeave={!isMobile ? handleMouseLeave : undefined}
+      onTouchStart={isMobile ? handleMouseEnter : undefined}
+      onTouchEnd={isMobile ? handleMouseLeave : undefined}
       role="button"
       aria-pressed={selected}
     >
