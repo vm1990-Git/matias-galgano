@@ -23,12 +23,12 @@ const Profile = () => {
       />
       <span className="text-3xl font-semibold">Acerca de mí</span>
       <span className="text-center px-8 lg:px-52 xl:px-96">
-        Nací, crecí y me formé en Buenos Aires. Me recibí en la UBA de médico y
-        después hice la especialidad de oftalmología en un hospital del sector
-        público, el Hospital Santa Lucía, donde también fui jefe de residentes
-        (2020-2021). Continué mi formación como becario en el servicio de
-        Cirugía de cataratas y refractiva del Hospital Santa Lucía (2021-2023)
-        Hoy formo parte del servicio de urgencias del Hospital Santa Lucía.
+        Nací, crecí y me formé en Buenos Aires. Me recibí en la UBA de médico, y
+        después hice la especialidad de oftalmología en el Hospital Santa Lucía,
+        donde también fui jefe de residentes (2020-2021). Allí continué mi
+        formación como becario en el servicio de Cirugía de cataratas y
+        refractiva (2021-2023). Hoy formo parte del servicio de urgencias del
+        Hospital Santa Lucía.
       </span>
 
       {expanded ? (
