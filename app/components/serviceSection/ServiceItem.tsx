@@ -1,6 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import { IconType } from "react-icons";
-import { isMobileDevice } from "../../utils/utils"; // Ajusta la ruta según tu estructura de archivos
 
 interface ServiceItemProps {
   title: string;
@@ -16,21 +15,32 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
   iconSize,
 }) => {
   const [selected, setSelected] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const isMobile = isMobileDevice();
+  const handleMouseEnter = useCallback(() => {
+    setSelected(true);
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
 
-  const handleMouseEnter = useCallback(() => setSelected(true), []);
-  const handleMouseLeave = useCallback(() => setSelected(false), []);
+    timerRef.current = setTimeout(() => {
+      setSelected(false);
+    }, 3000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center text-wrap rounded-2xl h-60 w-60 font-semibold text-sm"
-      onMouseEnter={!isMobile ? handleMouseEnter : undefined}
-      onMouseLeave={!isMobile ? handleMouseLeave : undefined}
-      onTouchStart={isMobile ? handleMouseEnter : undefined}
-      onTouchEnd={isMobile ? handleMouseLeave : undefined}
-      role="button"
-      aria-pressed={selected}
+      className="flex flex-col items-center justify-center text-center text-wrap rounded-2xl h-60 w-60 font-semibold text-sm select-none"
+      onMouseEnter={handleMouseEnter}
+      onTouchStart={handleMouseEnter}
     >
       {selected ? (
         <div className="flex flex-col justify-center items-center w-lvw px-6 max-w-96 animate-fade-up animate-once">
