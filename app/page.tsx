@@ -60,7 +60,7 @@ export default function Home() {
       </div>
       <FloatingWhatsApp
         phoneNumber="+54 9 11 6542-5471"
-        accountName="Dr. Matías Galgano"
+        accountName="Consultorio Dr. Galgano"
         avatar="/assets/logoWhatsApp.png"
         chatMessage="Hola, dejame tu consulta y en breve me contactaré."
         buttonStyle={{ bottom: 15, right: 15 }}
