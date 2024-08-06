@@ -56,7 +56,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
                 </div>
               ))
             ) : (
-              <span className="w-80 text-center duration-400 text-sm animate-fade-up animate-once">
+              <span className="w-60 text-center duration-400 text-sm animate-fade-up animate-once">
                 {description}
               </span>
             )}
