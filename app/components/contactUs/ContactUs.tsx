@@ -9,7 +9,7 @@ const ContactUs = () => {
         id="contact-section"
         className="text-center font-bold text-4xl pb-8 pt-4 text-white"
       >
-        Contáctanos
+        Contactanos
       </span>
       <div className="flex justify-center flex-wrap gap-8 md:gap-0 py-4 z-10">
         <ContactForm />

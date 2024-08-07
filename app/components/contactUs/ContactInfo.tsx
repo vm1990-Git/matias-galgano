@@ -35,8 +35,14 @@ const ContactInfo = () => {
         </div>
 
         <div className="flex justify-center items-center gap-2 ">
-          <FaLinkedin size={20} />
-          <span className="font-semibold">matias-galgano-667a28134</span>
+          <a
+            className="flex justify-center items-center gap-2 font-semibold"
+            href="https://www.linkedin.com/in/matias-galgano-667a28134/"
+            target="_blank"
+          >
+            <FaLinkedin size={20} />
+            matias-galgano-667a28134
+          </a>
         </div>
       </div>
     </div>

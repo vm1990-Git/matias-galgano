@@ -27,15 +27,15 @@ const Questionary: React.FC<QuestionaryProps> = ({}) => {
         />
         <QuestionaryItem
           question="¿Cuáles son los síntomas para consultar a un oftalmólogo?"
-          answer="En general, debe realizarse un control anual, sobre todo si existen antecedentes de patologías oftalmológicas como el glaucoma, o si están operados de los ojos. Dentro de los síntomas que deben alertar al paciente para concurrir están: Mala visión, dolores de cabeza, entre otros."
+          answer="En general, debe realizarse un control anual, sobre todo si existen antecedentes de patologías oftalmológicas como el glaucoma, o antecedentes de cirugías oftalmológicas."
         />
         <QuestionaryItem
           question="¿Qué es un fondo de ojos?"
-          answer="Es un estudio para evaluar las estructuras del ojo, como el cristalino y la retina. Se realiza para explorar lesiones como nevus o desgarros que puedan predisponer a la aparición de desprendimientos de retina. Desde el inicio de la colocación de gotas dilatadoras, se tarda aproximadamente 45 minutos en concluir la evaluación."
+          answer="Es un estudio para evaluar las estructuras del ojo y explorar lesiones, como nevus o desgarros entre otros. Tiempo aproximado: 45 minutos."
         />
         <QuestionaryItem
           question="¿Cómo es la preparación de un fondo de ojos?"
-          answer="No hay preparación. Debe concurrir preferentemente acompañado, con lentes de Sol y sin conducir ya que se verá afectada la visión de lejos y cerca."
+          answer="No hay preparación. Debe concurrir preferentemente acompañado, con lentes de Sol y sin conducir ya que se verá afectada la visión, sobre todo de cerca."
         />
         <QuestionaryItem
           question="¿Hacés cirugías de catarata y refractivas?"

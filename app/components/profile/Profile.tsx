@@ -38,6 +38,7 @@ const Profile = () => {
             <ProfileItem detail="Oftalmología: Hospital Santa Lucía (2017-2021)" />
             <ProfileItem detail="Cirugía de cataratas y refractiva: Hospital Santa Lucía (2021-2023)" />
             <ProfileItem detail="Experiencia Laboral: Guardia Oftalmología. Cirujano de cataratas y refractiva. Cirujano de guardia oftalmológica. Consultorio, Internación" />
+            <ProfileItem detail="Idiomas: Inglés, Italiano" />
           </div>
         </div>
       ) : (
