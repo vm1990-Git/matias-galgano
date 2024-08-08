@@ -16,7 +16,7 @@ const Profile = () => {
     >
       <Image
         className="w-80 rounded-3xl"
-        src="/assets/profile.jpeg"
+        src="/assets/profile.jpg"
         alt="Foto Perfil"
         width={500}
         height={500}

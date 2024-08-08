@@ -11,7 +11,7 @@ const ContactInfo = () => {
       <div className="flex flex-col justify-center items-start text-white gap-2.5 max-w-80 md:max-w-none">
         <div className="flex justify-center items-center gap-2 ">
           <FaPhoneAlt size={18} />
-          <span className="font-semibold">11-4823-0403</span>
+          <span className="font-semibold">4823-0403</span>
         </div>
         <div className="flex justify-center items-center gap-2 ">
           <IoLogoWhatsapp size={18} />

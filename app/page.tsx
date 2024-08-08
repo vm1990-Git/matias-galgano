@@ -49,7 +49,7 @@ export default function Home() {
           iconA={FaSquarePhone}
           iconsSize={90}
           titleA="Llamanos"
-          descriptionA="11-4823-0403"
+          descriptionA="4823-0403"
           actionA={() => makePhoneCall("1148230403")}
           iconB={IoLogoWhatsapp}
           titleB="Turnos por WhatsApp"
