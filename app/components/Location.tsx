@@ -14,7 +14,7 @@ const Location = () => {
           <iframe
             width="100%"
             height="500"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Pres.%20Jos%C3%A9%20E.%20Uriburu%201170%20PB%20A+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Oftalmolog%C3%ADa%20Dr%20Mat%C3%ADas%20Galgano+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
       </div>
